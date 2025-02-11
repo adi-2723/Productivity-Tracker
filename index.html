@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced Productivity Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🚀 Productivity Tracker</h1>
+      <button id="themeToggle">🌙 Dark Mode</button>
+      <input type="text" id="taskInput" placeholder="Enter a task..." />
+      <input type="datetime-local" id="taskDateTime" />
+      <select id="priority">
+        <option value="Low">Low 🔵</option>
+        <option value="Medium">Medium 🟠</option>
+        <option value="High">High 🔴</option>
+      </select>
+      <button onclick="addTask()">Add Task</button>
+      <ul id="taskList"></ul>
+      <div class="progress-container">
+        <label>Task Completion:</label>
+        <progress id="progressBar" value="0" max="100"></progress>
+      </div>
+      <div class="gamification">
+        <p>🔥 Streak: <span id="streakCount">0</span> days</p>
+        <p>🏆 Points: <span id="points">0</span></p>
+      </div>
+      <button id="startPomodoro">⏳ Start Focus Timer</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
