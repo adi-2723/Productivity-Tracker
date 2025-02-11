@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  transition: background 0.3s;
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+}
+
+input,
+select,
+button {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+button {
+  background: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #218838;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #eee;
+  padding: 10px;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: gray;
+  background: #d4edda;
+}
+
+.progress-container {
+  margin-top: 15px;
+}
+
+progress {
+  width: 100%;
+  height: 20px;
+}
+
+.gamification {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #333;
+  color: white;
+}
+
+.dark-mode .container {
+  background: #444;
+  color: white;
+}
+
+.dark-mode li {
+  background: #666;
+}
+
+.dark-mode li.completed {
+  background: #2d6a4f;
+}
